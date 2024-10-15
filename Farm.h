@@ -10,6 +10,8 @@ private:
     std::vector<Seeds> crops;
     Finance_Records financesReport;
     int daysPassed;
+    
+    void ClearScreen();
 
 public:
     Farm();
