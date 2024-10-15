@@ -1,6 +1,15 @@
 #include "Farm.h"
 #include <iostream>
 
+// Clear Screen function
+void ClearScreen() {
+#ifdef _WIN32
+    system("cls"); 
+#else
+    system("clear");
+#endif
+}
+
 Farm::Farm() : daysPassed(0) {}
 
 void Farm::StartDay() {
@@ -21,4 +30,8 @@ void Farm::ManageCrops() {
 
 void Farm::SaveGame() {
     std::cout << "Saving game..." << std::endl;
+}
+
+void Farm::Menu() {
+    std::cout << "1. Start Day\n2. Manage Crops\n3. End Day\n4. Save Game\n";
 }
