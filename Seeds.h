@@ -19,6 +19,8 @@ void Health_water_relationship();
 
 void Health_level_calculator(double Health_Level);
 
+Seeds(const int Harvest_time,int Water_per_day);
+
 
 };
 #endif
