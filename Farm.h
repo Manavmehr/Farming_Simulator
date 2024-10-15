@@ -1,25 +1,24 @@
 #ifndef FARM_H
 #define FARM_H
 
-#include "Farmland.h"
 #include <vector>
-using namespace std;
+#include "Finance_Records.h"
+#include "Seeds.h"
 
 class Farm {
 private:
-    vector<Farmland*> farmlands;
-    int dayCount;
+    std::vector<Seeds> crops;
+    Finance_Records financesReport;
+    int daysPassed;
 
 public:
     Farm();
-    ~Farm();
-    
-    void startDay();
-    void endDay();
-    
-    void addFarmland(Farmland* farmland);
-    void harvestAll();
-    void showFarmStatus();
+    void StartDay();
+    void EndDay();
+    void ManageCrops();
+    void SaveGame();
+    void Menu();
 };
 
 #endif
+
