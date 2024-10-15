@@ -2,9 +2,11 @@
 #define SEEDS_RICE_H
 #include<Seeds.h>
 class Seeds_Rice: public Seeds{
-private:
+public:
 double Cost_Rice;
 bool Needs_Ricefield;
 
+
+Seeds_Rice(const double Cost_Rice,bool Needs_Ricefield);
 };
 #endif

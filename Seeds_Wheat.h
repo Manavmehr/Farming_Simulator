@@ -2,8 +2,10 @@
 #define SEEDS_WHEAT_H
 #include<Seeds.h>
 class Seeds_Wheat: public Seeds{
-    private:
+    public:
 double Cost_Wheat;
 bool Needs_Wheatfeild;
+public:
+Seeds_Wheat(const double Cost_Wheat,bool Needs_Wheatfield);
 };
 #endif

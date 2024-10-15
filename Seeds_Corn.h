@@ -4,9 +4,11 @@
 #include<Seeds.h>
 
 class Seeds_Corn: public Seeds{
-    private:
-    double Cost_corn;
+    public:
+    double Cost_Corn;
     bool Needs_Cornfeild;
+
+    Seeds_Corn(const double Cost_Corn, bool Needs_Cornfield);
 
 };
 #endif
