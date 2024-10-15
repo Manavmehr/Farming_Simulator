@@ -1,5 +1,5 @@
 
-#include<Seeds.h> 
+#include "Seeds.h"
 
 Seeds::Seeds(const int Harvest_time,int Water_per_day)
 :Crop_quality(100),Health_Level(100),watered_today(0), Harvest_time(Harvest_time),Water_per_day(Water_per_day){}
@@ -9,7 +9,11 @@ void Seeds:: Water_Today(){
 int watered_today =+1;
 };
 void Seeds :: Health_water_relationship(){
+<<<<<<< HEAD
     if (watered_today==0);{
+=======
+    if (watered_today>0){
+>>>>>>> e594329 (update)
         Health_Level-20.00;
         
     };
