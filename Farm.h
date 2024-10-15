@@ -2,13 +2,13 @@
 #define FARM_H
 
 #include <vector>
-#include "Finance_Records.h"
+#include "Financial_Records.h"
 #include "Seeds.h"
 
 class Farm {
 private:
     std::vector<Seeds> crops;
-    Finance_Records financesReport;
+    Financial_Records financesReport;
     int daysPassed;
     
     void ClearScreen();
