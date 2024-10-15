@@ -7,6 +7,7 @@ class Farming_equipment{
     public:
 std:: string name;
 double Cost;
+Farming_equipment(const Std::string name, double Cost);
 
 bool Is_seeds;
 
