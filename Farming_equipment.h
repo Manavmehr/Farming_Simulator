@@ -1,4 +1,5 @@
-#pragma
+#ifndef FARMING_EQUIPMENT_H
+#define FARMING_EQUIPMENT_H
 #include<iostream>
 #include<string.h> 
 
@@ -13,3 +14,4 @@ void Add_equipment(double Cost,double Finances);
 
 void sell_equipment(double Cost, double Finances);
 };
+#endif

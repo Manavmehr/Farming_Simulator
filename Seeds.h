@@ -1,4 +1,5 @@
-#pragma 
+#ifndef SEEDS_H
+#define SEEDS_H
 #include<iostream>
 #include<string.h>
 #include<Farming_equipment.h>
@@ -20,3 +21,4 @@ void Health_level_calculator(double Health_Level);
 
 
 };
+#endif

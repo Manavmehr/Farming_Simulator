@@ -1,5 +1,6 @@
 
-#pragma
+#ifndef SEEDS_CORN_H
+#define SEEDS_CORN_H
 #include<Seeds.h>
 
 class Seeds_Corn: public Seeds{
@@ -8,3 +9,4 @@ class Seeds_Corn: public Seeds{
     bool Needs_Cornfeild;
 
 };
+#endif
